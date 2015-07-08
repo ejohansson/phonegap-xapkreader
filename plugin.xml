@@ -32,7 +32,8 @@
             <integer name="patch_version">$PATCH_VERSION</integer>
             <integer name="file_size">$FILE_SIZE</integer>
         </config-file>
-
+        
+        <framework src="build-extras.gradle" custom="true" type="gradleReference" />
         <source-file src="src/android/XAPKReader.java" target-dir="src/org/apache/cordova/xapkreader" />
         <source-file src="src/android/XAPKProvider.java" target-dir="src/org/apache/cordova/xapkreader" />
         <source-file src="src/android/XAPKDownloaderActivity.java" target-dir="src/org/apache/cordova/xapkreader" />
